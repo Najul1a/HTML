@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana-aluna</title>
+    <style>
+          body{
+            background: #090a0afb;
+            color: rgb(5, 123, 5);
+            text-shadow: 2px 2px 5px #181888;
+          }
+          h1{
+            color: #0da119e1;
+          }
+    </style>
+</head>
+<body>
+    <h1>Aula 01 - HTML | CSS | JS</h1>
+
+    <h2>Alerta de mensagem!</h2>
+    <p style="text-align: center;">
+    <button onclick="alerta()" 
+    style="">🚨Alerta!🚨</button>
+</p>
+
+<h2>Altere a cor do fundo do site clicando em uma das cores abaixo:</h2>
+
+<p style="text-align: center">
+    <button onclick="verde()"style="background: green ">verde</button>
+
+    <button onclick="rosa()"style="background: pink"> rosa</button>
+    <buttoon onclick="branco()"style="background: white">branco</button>
+</p>
+
+    <!-- <p>document.getElementsByTagName("body")[0].style.background = "#f286ab"
+        '#f286ab'</p> -->
+    <h1></h1>
+ <h1></h1>
+</body>
+<script>
+    console.log("Olá Mundo");
+    
+    function alerta(){
+        var nome = prompt("Olá, informe seu nome:")
+        alert(`Olá ${nome}!`)
+    }
+    function verde(){
+        document.getElementsByTagName("body")[0].style.
+        background = "green"
+    }
+    function rosa(){
+        document.getElementsByTagName("body")[0].style.
+        background = "pink"
+    }
+    function branco(){
+        document.getElementsByTagName("body")[0].style.
+        background = "white"
+    }
+
+
+</script>
+</html>
+    
